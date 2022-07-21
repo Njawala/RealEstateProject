@@ -23,7 +23,7 @@ function Login() {
   return (
 
     <div className='Login'>
-    <h1> Login-Page</h1>
+    <h1> Login-Page updated</h1>
 
     {
       lands.map((land,i)=>{
