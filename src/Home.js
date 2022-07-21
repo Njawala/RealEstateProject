@@ -15,7 +15,7 @@ import Explore from './Explore'
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-3'>Let Us Guide You Home</h1>
+              <h1 className='mb-3'>Let Us Guide You Hooooome</h1>
               <h5 className='mb-4'>Best &amp; Reality</h5>
               <a
                 className='btn btn-outline-light btn-lg m-2'
