@@ -1,32 +1,43 @@
-import React from 'react'  
+import {useState, useEffect} from 'react'
+import axios from 'axios'
 
-class Login extends React.Component {  
-  render() {  
-    return <h1>This is a Login page</h1>  
+function Login() {
 
-    {/*function searchbar(){
-  return(
+  const [lands, setLands] = useState([])
 
-    <Navbar>
-  <Container fluid>
-  <Navbar.Collapse id="navbarScroll">
-    <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-      </Navbar.Collapse>
-  </Container>
-</Navbar>
+  useEffect(()=>{
+    async function getAllLand(){
+      try{
 
-    )
- } */}
-  
-  }  
-}  
+        const lands = await axios.get("http://127.0.0.1:8000/api/land")
+        console.log(lands.data)
+        setLands(lands.data)
+
+      } catch(error){
+        console.log(error)
+      }
+    }
+    getAllLand()
+  },[])
+
+  return (
+
+    <div className='Login'>
+    <h1> Login-Page</h1>
+
+    {
+      lands.map((land,i)=>{
+        return(
+          <h2 key={i}>{land.location} {land.size} {land.price} </h2>
+          )
+      })
+     }
+
+    </div>
+  )
+}
+
 export default Login
+    
+ 
 

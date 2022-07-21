@@ -6,6 +6,7 @@ import {
   MDBRow,
   MDBIcon } from 'mdb-react-ui-kit';
 
+  
 export default function Footer() {
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>

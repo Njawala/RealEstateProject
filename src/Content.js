@@ -1,9 +1,18 @@
 import React from 'react'
-import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardFooter, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import { 
+  MDBCard,
+  MDBCardImage, 
+  MDBCardBody, 
+  MDBCardTitle, 
+  MDBCardText, 
+  MDBCardFooter, 
+  MDBRow, 
+  MDBCol }
+   from 'mdb-react-ui-kit';
 
-class Content extends React.Component{
-  render(){
-    return(
+
+const Content = () => {
+  return(
         
      <MDBRow className='row-cols-1 row-cols-md-4 g-4'>
            <MDBCol>
@@ -95,12 +104,7 @@ class Content extends React.Component{
     </MDBCol> 
 
     </MDBRow>
-    
-
-      )
-      
-  }
-  
-}
+  )
+};
 
 export default Content

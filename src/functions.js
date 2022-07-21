@@ -1,7 +1,6 @@
-exports.funA = () => {
-  console.log("This is from Function A");
+import React from "react";
+ 
+const functions = () => {
+ return <h1>Hello, world</h1>;
 };
-
-exports.funB = () => {
-  console.log("This is from Function B");
-};
+export default functions
